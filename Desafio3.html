@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio 3 do curso de Angular da BRQ">
+    <title>Desafio 3</title>
+
+    <link rel="stylesheet" href="Desafio3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <nav class="cabeçalho-item">
+            <h3><b>SyncTur</b></h3>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h3 class="titulo">Cadastrar Pacotes</h3>
+
+        <section class="conteudo-principal">
+            <div class="pacotes">
+                <div class="pacote">
+                    <label class="pacote-nome" for="name">Pacote</label>
+                    <input class="nome" type="text" id="name" placeholder="Digite nome completo"></input>
+                </div>
+                
+                <div class="status">
+                    <div class="status-pacote">
+                        <label class="nome2" for="pacote">Status do Pacote</label>
+
+                        <div class="status-click">
+                            <input class="click" type="checkbox" name="pacote" id="true" value="true">
+                            <label class="letras" for="true">Ativo</label>
+                        </div>
+
+                        <div>
+                            <input class="click" type="checkbox" name="pacote" id="false" value="false">
+                            <label class="letras" for="false">Inativo</label>  
+                        </div>
+                    </div>
+
+                    <div class="data-viagem">
+                        <label class="nome3" for="data">Data da Viagem</label>
+                        <input class="data" type="date" id="data" placeholder="Data"></input>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descricao">
+                <label class="nome4" for="mensagem">Descrição</label>
+                <textarea class="texto" placeholder="Descrição do pacote"></textarea>
+            </div>
+        </section>
+        
+        <button class="cadastrar" type="submit">Cadastrar</button>
+
+        <section class="conteudo-secundario">
+            <!-- <div class="reservas">
+                <h3 class="titulo-reserva">Pacote</h3>
+
+                <p class="text-descricao">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                <p class="data-viagem"><b>Data de viagem: </b></p>
+
+                <button class="editar" type="submit">Editar</button>
+
+                <button class="excluir" type="submit">Excluir</button>
+            </div> -->
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h1 class="titulo-rodape">SyncTur</h1>
+
+        <section class="rodape-texto">
+            <p class="text">Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</p>
+            <p class="text">Call us now toll free: (800)2345-6789</p>
+            <p class="text">Customer support: support@demolink.org</p>
+            <p class="text">Skype: sample-username</p>
+        </section>   
+    </footer>
+    
+    <script src="Desafio3.js"></script>
+</body>
+</html>
